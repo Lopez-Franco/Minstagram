@@ -1,0 +1,120 @@
+.navbar{
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1;
+}
+.navbar ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+#logo{
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;    
+    font-weight:bolder;    
+    align-self: flex-end;
+}
+#icon-camera{
+    width: 4.5em;
+    height: 3.4em;
+}
+main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.container-card{
+    display: grid;
+    grid-template-areas: 'card card card';
+    width: 1100px;
+    justify-content: space-evenly;   
+}
+.card{
+    grid: card;
+    margin-top: 2%;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 430px;
+}
+.head-card{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.head-avatar{
+    align-self: center;
+    margin-right: 5px;
+}
+.head-profile{
+    align-self: center;
+    width: 100%;
+}
+.head-dots{
+   align-self: flex-start;
+}
+.main-card-img{  
+    object-fit: cover;  
+    width: 100%;
+    height: 320px;
+}
+.main-card-img:hover{    
+    -webkit-transform:scale(1.04);
+    transform:scale(1.04);
+}
+.foot-card{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#btn-camera{
+    background-color: transparent;
+    border: none;    
+    cursor: pointer;
+}
+.material-symbols-outlined:hover{
+    filter: opacity(50%);    
+    cursor: pointer;
+}
+.avatar-profile-picture{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.font-card{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /* Tablets */
+    .container-card{
+        display: grid;
+        grid-template-areas: 'card card';
+        justify-content: space-evenly;
+    }
+    .card{
+        grid-template-areas: card;
+    }
+}
+@media screen and (max-width: 767px){
+    /* Smartphones */
+    .container-card{
+        display: grid;
+        grid-template-areas: 'card';
+        justify-content: space-evenly;
+    }
+    .card{
+        grid-template-areas: card;
+    }
+}
